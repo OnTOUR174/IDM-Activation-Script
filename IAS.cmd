@@ -469,9 +469,9 @@ echo Deleting IDM registry keys...
 echo:
 
 for %%# in (
-""HKCU\Software\DownloadManager" "/v" "FName""
-""HKCU\Software\DownloadManager" "/v" "LName""
-""HKCU\Software\DownloadManager" "/v" "Email""
+""HKCU\Software\DownloadManager" "/v" "FName"ArT"
+""HKCU\Software\DownloadManager" "/v" "LName"ArT_OnTOUR"
+""HKCU\Software\DownloadManager" "/v" "Email"ArT@OnTOUR.999"
 ""HKCU\Software\DownloadManager" "/v" "Serial""
 ""HKCU\Software\DownloadManager" "/v" "scansk""
 ""HKCU\Software\DownloadManager" "/v" "tvfrdt""
@@ -485,9 +485,9 @@ set "reg="%%~A"" &reg query !reg! %nul% && call :del
 )
 
 if not %HKCUsync%==1 for %%# in (
-""HKU\%_sid%\Software\DownloadManager" "/v" "FName""
-""HKU\%_sid%\Software\DownloadManager" "/v" "LName""
-""HKU\%_sid%\Software\DownloadManager" "/v" "Email""
+""HKU\%_sid%\Software\DownloadManager" "/v" "FName"ArT"
+""HKU\%_sid%\Software\DownloadManager" "/v" "LName"ArT_OnTOUR"
+""HKU\%_sid%\Software\DownloadManager" "/v" "Email"ArT@OnTOUR.999"
 ""HKU\%_sid%\Software\DownloadManager" "/v" "Serial""
 ""HKU\%_sid%\Software\DownloadManager" "/v" "scansk""
 ""HKU\%_sid%\Software\DownloadManager" "/v" "tvfrdt""
